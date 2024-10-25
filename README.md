@@ -1,4 +1,4 @@
-# Reto #1 Generador de Pixel Art
+# Reto #1 Básico Generador de Pixel Art
 
 Este proyecto es parte del **Reto #1: Generador de Pixel Art**. Esta aplicación te permite crear y editar arte en forma de píxeles utilizando una cuadrícula personalizable. Puedes elegir el tamaño de la cuadrícula, seleccionar colores y pintar o borrar fácilmente en el lienzo.
 
