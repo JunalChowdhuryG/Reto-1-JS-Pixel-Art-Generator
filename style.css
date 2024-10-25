@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+}
+
+.wrapper {
+    text-align: center;
+    max-width: 90vw;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #7e7d7d;
+    width: 90vw;  /* Ajustado para que no sobrepase el ancho de la ventana */
+    max-height: 90vh; /* Limitar la altura para evitar que el contenido se desborde */
+    overflow-y: auto; /* Añadir desplazamiento vertical si es necesario */
+}
+
+label {
+    display: block;
+}
+
+span {
+    position: relative;
+    font-size: 22px;
+    bottom: -1px;
+}
+
+.opt-wrapper {
+    display: flex;
+    justify-content: center; /* Centrar las opciones */
+    margin-bottom: 10px; /* Reducir el margen inferior */
+    gap: 5px; /* Reducir el espacio entre configuraciones */
+}
+
+button {
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: #ec6f00;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;   
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 70px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 8px;
+    border: 4px solid #000;
+}
+
+input[type="color"]::-moz-color-swatch {
+    border-radius: 8px;
+    border: 4px solid #000;
+}
+
+.gridCol {
+    height: 1em;
+    width: 1em;
+    border: 1px solid #ffffff;
+}
+
+.gridRow {
+    display: flex;
+    justify-content: center; /* Centrar filas de la cuadrícula */
+}
+
+@media only screen and (max-width: 768px) {
+    .gridCol {
+        height: 0.8em;
+        width: 0.8em;
+    }
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #ec6f00; 
+    height: 8px;
+    border-radius: 5px;
+}
+
+input[type="range"]::-moz-range-track {
+    background: #ec6f00;
+    height: 8px;
+    border-radius: 5px;
+}
+
+input[type="range"]::-ms-track {
+    background: #ec6f00;
+    height: 8px;
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #000000; 
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #000000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb {
+    width: 16px;
+    height: 16px;
+    background: #ec6f00;
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+.container {
+    display: grid;
+    gap: 1px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    background-color: #7e7d7d;
+    margin: 0 auto; /* Centrar la cuadrícula */
+}
